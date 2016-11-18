@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+</head>
+
+<body>
+    <div class="paper">
+        <div class="row">
+            <div id="header" class="c8"></div>
+            <div id="topContacts" class="c4"></div>
+            <div id="about" class="c12"></div>
+            <div class="c8">
+                <h2>Professional skills</h2>
+                <h3>Design Skills</h3>
+                <ul id="skills"></ul>
+                <h3>Design Tools</h3>
+                <ul id="tools"></ul>
+                <div>
+                    <h3>Development skills</h3>
+                    <div class="c4" id="circle-1"></div>
+                    <div class="c4" id="circle-2"></div>
+                    <div class="c4" id="circle-3"></div>
+                </div>
+            </div>
+            <div class="c8">
+                <div id="workExperience">
+                    <h2>Work Experience</h2></div>
+                <div id="education">
+                    <h2>Education</h2></div>
+            </div>
+            <div class="c12" id="projects">
+                <h3>Projects</h3>
+            </div>
+
+            <div class="c12-2">
+                 <div id="mapDiv">
+                <h2>Where I've Lived and Worked</h2> </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer" class="footer">
+    </div>
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/resumeBuilder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/extras.js"></script>
+    <script>
+    // Notice how all of a sudden there's JavaScript inside this HTML
+    // document? You can write JavaScript between <script> tags. At the end of your
+    // JavaScript, don't forget the closing script tag with the slash (/).
+    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+    //   two slashes for all following characters on a single line, or
+    /*
+        an opening and closing set of slash asterisks for block comments.
+    */
+    if (document.getElementsByClassName('flex-item').length === 0) {
+        document.getElementById('topContacts').style.display = 'none';
+    }
+    if (document.getElementsByTagName('h1').length === 0) {
+        document.getElementById('header').style.display = 'none';
+    }
+    if (document.getElementsByClassName('work-entry').length === 0) {
+        document.getElementById('workExperience').style.display = 'none';
+    }
+    if (document.getElementsByClassName('project-entry').length === 0) {
+        document.getElementById('projects').style.display = 'none';
+    }
+    if (document.getElementsByClassName('education-entry').length === 0) {
+        document.getElementById('education').style.display = 'none';
+    }
+    if (document.getElementsByClassName('flex-item').length === 0) {
+        document.getElementById('lets-connect').style.display = 'none';
+    }
+    if (document.getElementById('map') === null) {
+        document.getElementById('mapDiv').style.display = 'none';
+    }
+    </script>
+</body>
+
+</html>
