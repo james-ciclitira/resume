@@ -1,13 +1,3 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
 function main() {
     return 'Hello, World!';
 }
@@ -16,12 +6,12 @@ main();
 
 var bio = {
     "name": "James Ciclitra",
-    "role": "DESIGNER  &  WEB DEVELOPER",
-    "welcomeMessage": "Lorem ipsum dolor sit amet, semper repudiare ei quo, eam no ullum altera voluptua, ea eum augue probatus. At duo cibo sale consul. Ut eius ocurreret pri, amet indoctum vix at. An qui ceteros mandamus assueverit, ea mucius euripidis philosophia meRationibus liberavisse ne ius, integre sententiae eu eum, at duo dicat noster. Maiorum omnesque legere aeterno disseneat.Nam harum corrumpit ad, ut latine molestie qui. Sea ipsum torquatos expetenda temporibus. Ut nihil atomorum ius, probatus concludaturque ne usu, in sea partiendo aliquando, per  facer everti consequat.Qui no minimum partiendo assueverit, ea sit oporteat persecuti, ei fugit ullum mnesarchum soluta repudiare reformidans in eam!",
+    "role": "Product designer  &  web developer",
+    "welcomeMessage": "I call myself a mobile designer but to be honest I have always found descriptions  such as UI designer , UX designer, motion designer and visual designer a little  confusing as I think all of these fields are closely affiliated and overlap. I like developing clean, clear and useable interfaces. I am happy and able to work on either an iOS platform or android but my preference is the former and I am a  fan and lover of material design and all things Google.For the past year and half I have been working for a small company called CrowdScores producing a football scores application for both android and iOS. I am not a huge football fan but it that has not really mattered  to me as my passion is to create a great product irrespective of the field or market. <br>   <br> I have been working as the principal designer  with help and input from the rest of the company. It has been a struggle at points but a great learning experience. I have had the opportunity to work closely with an amazing development team and marketing department. When I joined  CrowdScores we had 47,000 monthly users we are now approaching half a million and still growing! It has been a great project to work on but I have come to the decision that for my career development I need to  move to a larger team but still work as an in-house designer for one brand. In the time that  I have spent in my current position  I feel that I have leant a lot about football -  sad to say I am  still not that crazy about it and am looking for something new. <br> <br>  I am often told I am  rather inquisitive and am always interested in learning new things. At the moment I am  working on a front-end  web development nanodegree offered by Udacity. I am not a huge fan of JSON files but from inspection of this CV I am progressing!  I am  half-way though the course and am  keen to follow this  after this with the Android basic Nanodegree, At university  I used  Android studios in my final degree submission, collaborating with a colleague to develop an android app for children with learning difficulties. The finalised project is in a private repository and as yet not launched - I would be happy to demonstrate our progress to date.",
     "contacts": [{
-        "email": "jciclitira@gmail.com",
-        "twitter": "@jimi_design",
-        "location": "London",
+        "email": "Email:     jciclitira@gmail.com",
+        "twitter": "Mobile:     07847395121",
+        "location": "Location:     London",
         "mobile": "093423234423432"
     }],
     "bioPic": "images/bio.png",
@@ -35,7 +25,7 @@ var education = {
         "name": "Edinburgh College Of Art",
         "location": "Edinburgh",
         "degree": "Product Design",
-        "majors": "BA (Hons)",
+        "majors": "2:1 BA (Hons)",
         "dates": "2011 - 2015",
         "url": "http://www.eca.ed.ac.uk/school-of-design/undergraduate/product-design-ba-hons"
     }, ],
@@ -55,21 +45,17 @@ var work = {
             "title": "Mobile designer",
             "location": "London - United Kingdom",
             "dates": "September 2015 - present",
-            "description": "CrowdScores is a real-time sports data application." +
-                " Developing technology to crowdsource data from more than 200 football competitions from 117 different countries and cover around 1300 matches on an average week.",
-            "url": "http://crowdscores.com/"
-
+            "description": "CrowdScores is a real-time sports data application. I had the pleasure of being the design lead and taking responsibility for a variety of roles including, designing the mobile application, conducting research, conceptualising ideas, building mockup prototypes, and finally creating promotional material for the marketing department. On a whole I have enjoyed the time I have spend here, as it has been a valuable learn experience but I feel it is time for a change.",
+            "url": "http://CrowdScores.com/"
         },
 
-
         {
-            "employer": "Sam Labs",
-            "title": "Design intern",
+            "employer": "SamLab",
+            "title": "Designer Intern",
             "location": "London - United Kingdom",
-            "dates": "August- September 2015",
-            "description": "I developed a edicuational" +
-                "included design, development and deplophical user interfaces.",
-            "url": "http://samlabs.com/"
+            "dates": "August 2015 - August 2015",
+            "description": "With SAM smart construction kit, you create awesome inventions with wireless block. I work here for a few weeks after meeting at New Designers to help develop a education package.",
+            "url": "http://SamLab.com/"
         }
     ]
 };
@@ -78,16 +64,16 @@ var projects = {
     "project": [{
         "title": "Udacity portfolio project",
         "dates": "2016",
-        "description": "This web page is my portfolio page, and it was the first project for Udacity's Front-End Nanodegree. The project was built on Google App Engine with Bootstrap, and the project was focused on using Bootstrap’s grid styling system to style the responsive and organized wep page more easily.",
+        "description": "The portfolio page, and it was the first project undertake for Udacity's Front-End Nanodegree. The project was built on Google App Engine with Bootstrap, with a focus on using Bootstrap’s grid styling system to style a responsive and organized wep page more easily.",
         "images": ["images/web1.png", "images/web2.png", "images/web3.png"],
-        "url": "https://github.com/james-ciclitira"
+        "url": "https://github.com/james-ciclitira/udacity_protfolio_project"
 
     }, {
         "title": "CrowdScores mobile design",
         "dates": "2016",
-        "description": "I took the Structural Elements sticker sheet from Google's recent release of Material Design and converted for use in Sketch. From Google: Structural Elements The Structural Elements sticker sheet contains various elements that make up all of the CrowdScores layouts.",
+        "description": "After taking Structural Elements from Google's Material Design stickersheet I produced the CrowdScores sticker sheet containing various elements that makeup the majority all of the CrowdScores layouts.",
         "images": ["images/nexus.png", "images/players.png", "images/nexus.png"],
-        "url": "https://github.com/james-ciclitira"
+        "url": "https://james-ciclitira.github.io/portfolio/"
 
     }]
 };
@@ -154,7 +140,7 @@ education.display = function() {
         var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
 
-        $("#education").append(formattedName + formattedDegree, formattedDates, formattedLocation);
+        $("#education").append(formattedName + formattedDegree, formattedMajor, formattedDates, formattedLocation);
 
     }
     for (var onlinecourses in education.onlinecourses) {
@@ -189,8 +175,6 @@ bio.display();
 work.display();
 education.display();
 projects.display();
-
-$("#mapDiv").append(googleMap);
 
 
 

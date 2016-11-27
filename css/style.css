@@ -1,27 +1,23 @@
 body {
+    font-family: 'Raleway', sans-serif;
     background-color: #eee;
+    color: #4c4c4c;
+
     margin: 0
 }
 
-div,
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #4c4c4c;
-}
+.top {
+   padding-top: 2em;
+        padding-bottom: 2em;
+                padding-left: 1em;
+                                padding-right: 1em;}
+
 
 .clear-fix {
     overflow: auto;
 }
+
+
 
 .work-entry,
 .project-entry {
