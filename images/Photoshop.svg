@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Photoshop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="24.3017667%" y1="-5.22247458%" x2="62.6352%" y2="77.1506102%" id="linearGradient-1">
+            <stop stop-color="#A0CBFF" offset="0%"></stop>
+            <stop stop-color="#A0CBFE" offset="39.41%"></stop>
+            <stop stop-color="#8EC2FC" offset="58.3%"></stop>
+            <stop stop-color="#83BCFB" offset="78.38%"></stop>
+            <stop stop-color="#7FBAFB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="35.6212047%" y1="1.40905023%" x2="61.3858984%" y2="88.477318%" id="linearGradient-2">
+            <stop stop-color="#090058" offset="0%"></stop>
+            <stop stop-color="#070033" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-43.520449%" y1="-70.0600823%" x2="98.0162706%" y2="129.939918%" id="linearGradient-3">
+            <stop stop-color="#A0CBFF" offset="0%"></stop>
+            <stop stop-color="#A0CBFE" offset="39.41%"></stop>
+            <stop stop-color="#8EC2FC" offset="58.3%"></stop>
+            <stop stop-color="#83BCFB" offset="78.38%"></stop>
+            <stop stop-color="#7FBAFB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-91.0413811%" y1="-153.083528%" x2="85.6115237%" y2="105.378316%" id="linearGradient-4">
+            <stop stop-color="#A0CBFF" offset="0%"></stop>
+            <stop stop-color="#A0CBFE" offset="39.41%"></stop>
+            <stop stop-color="#8EC2FC" offset="58.3%"></stop>
+            <stop stop-color="#83BCFB" offset="78.38%"></stop>
+            <stop stop-color="#7FBAFB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Photoshop">
+            <g id="Adobe_Photoshop_CS6_icon" transform="translate(6.000000, 8.000000)">
+                <g id="Livello_1">
+                    <g id="Group">
+                        <g id="Layer_2_1_" fill="url(#linearGradient-1)">
+                            <rect id="Rectangle-path" x="0" y="0" width="176" height="172.947977"></rect>
+                        </g>
+                        <g id="Layer_2" transform="translate(13.909409, 13.691950)" fill="url(#linearGradient-2)">
+                            <rect id="Rectangle-path" x="0.0878710165" y="0.0612251622" width="148.006613" height="145.441627"></rect>
+                        </g>
+                        <g id="Layer_4" transform="translate(42.448038, 48.281545)">
+                            <g id="Group">
+                                <path d="M0.0841221749,0.462816227 C0.0841221749,0.462816227 11.2120155,0.170270327 20.3722288,0.170270327 C29.6286555,0.170270327 36.2286555,2.34648351 40.6597488,6.17068573 C44.8948955,9.78441905 47.7507888,15.9448846 47.7507888,22.9577785 C47.7507888,29.9706724 45.5836422,35.7090277 41.6435888,39.744285 C36.5225755,44.9508985 30.5550022,48.0323038 20.3722288,48.4591043 C17.5591622,48.5769434 14.9555355,48.6050841 14.9555355,48.6050841 L14.9555355,71.4013862 L0.0835355083,71.4013862 L0.0841221749,0.462816227 L0.0841221749,0.462816227 Z M14.9549488,35.9746054 C16.5706288,36.1317242 17.5832155,36.0560961 19.9779888,36.0273692 C27.9554822,35.9318081 32.8782022,31.0839884 32.8782022,23.7527529 C32.8782022,17.1666595 28.8190555,11.7589573 21.1607088,11.478723 C18.1082822,11.3673327 14.9549488,11.478723 14.9549488,11.478723 L14.9549488,35.9746054 L14.9549488,35.9746054 Z" id="Shape" fill="url(#linearGradient-3)"></path>
+                                <path d="M53.4262022,55.5194856 C56.4234822,57.3574242 63.4963355,60.1099353 68.3175622,60.1099353 C73.2432155,60.1099353 75.2771888,58.3751791 75.2771888,55.6707418 C75.2771888,52.9627868 73.6708955,50.1182323 67.5654555,48.0616171 C56.7479088,44.3804633 52.5708422,39.9741006 52.6787888,33.8065999 C52.6787888,23.8453827 61.0317488,16.3763752 73.9912155,16.3763752 C80.0966555,16.3763752 84.9730288,18.3708464 88.1838555,19.9936261 L88.1838555,31.9487282 C85.8260422,30.648394 79.0248155,27.745213 74.5274288,27.745213 C70.5627355,27.745213 68.3146288,29.3685789 68.3146288,32.0730163 C68.3146288,34.5634672 70.3509488,35.8626289 76.7767088,38.1373345 C86.7359622,41.6009842 90.9130288,46.6874135 91.0192155,54.4817977 C91.0192155,64.3339697 83.4195355,72.16822 68.3146288,71.6927596 C63.1314288,71.5297781 57.3885488,69.4825431 53.4256155,67.319814 L53.4256155,55.5194856 L53.4262022,55.5194856 Z" id="Shape" fill="url(#linearGradient-4)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

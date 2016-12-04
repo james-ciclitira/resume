@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>sketch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="38.7733432 5.31944504 88.1394144 0.00370093271 137.223823 5.31944504 175.823349 56.673504 88 158.658705 0.16889226 56.673504"></polygon>
+        <linearGradient x1="28.7540427%" y1="30.6154677%" x2="94.1091651%" y2="10.6488517%" id="linearGradient-3">
+            <stop stop-color="#FDC003" offset="0%"></stop>
+            <stop stop-color="#FDD12B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sketch">
+            <g id="Group" transform="translate(8.000000, 17.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FEEEB7" xlink:href="#path-1"></use>
+                <polygon id="Bottom-right" fill="#EA6C00" mask="url(#mask-2)" points="140.061936 56.6591708 175.823208 56.6591708 88 158.64109"></polygon>
+                <polygon id="Bottom-left" fill="#EA6C00" mask="url(#mask-2)" points="35.9383341 56.6599598 0.177062374 56.6599598 88 158.666108"></polygon>
+                <polygon id="Bottom-center" fill="#FDAD00" mask="url(#mask-2)" points="35.9386907 56.6613971 140.051367 56.687669 88.0026805 158.657787"></polygon>
+                <polygon id="Top-rigth" fill="url(#linearGradient-3)" mask="url(#mask-2)" points="137.221726 5.31250065 140.065621 56.6576038 88.1414424 0.00683004276"></polygon>
+                <polygon id="Right" fill="#FDAD00" mask="url(#mask-2)" points="137.221726 5.31250065 140.065621 56.6576038 175.8219 56.6576038"></polygon>
+                <polygon id="Left" fill="#FDAD00" mask="url(#mask-2)" points="38.7772364 5.31187123 35.9333413 56.6569744 0.177321743 56.6569744"></polygon>
+                <polygon id="Top-let" fill="url(#linearGradient-3)" mask="url(#mask-2)" points="38.7875571 5.30567061 35.943662 56.6507738 88.1379045 0.00645464067"></polygon>
+                <polygon id="Top-center" fill="#FEEEB7" mask="url(#mask-2)" points="35.9451533 56.6576038 140.057829 56.6576038 88.1375363 0.00683004276"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

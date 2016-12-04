@@ -12,6 +12,10 @@ body {
                                 padding-right: 1em;}
 
 
+.media-heading-2{
+    margin-bottom: 5px;
+}
+
 .clear-fix {
     overflow: auto;
 }
@@ -20,6 +24,10 @@ body {
     height: 2em;
 }
 
+
+.small-link {
+    font-size: 14px;
+}
 
 
 
