@@ -7,15 +7,19 @@ body {
 }
 
 .top {
-   padding-top: 2em;
-        padding-bottom: 2em;
-                padding-left: 1em;
+   padding-top: .8em;
+        padding-bottom: .8em;
                                 padding-right: 1em;}
 
 
 .clear-fix {
     overflow: auto;
 }
+
+.media-object {
+    height: 2em;
+}
+
 
 
 

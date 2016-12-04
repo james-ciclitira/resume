@@ -16,7 +16,14 @@ var bio = {
     }],
     "bioPic": "images/bio.png",
     "skills": ["Sketching", "UI/UX Design", "Interaction Design", "Prototyping", "Wireframes", "Grid & Layout", "Color Theory", "Typography", "Design Research", "Visual Design"],
-    "tools": ["Abobe Photoshop <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>", "Abobe Illustrator <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>", "Abobe Indesign <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>", "Sketch<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>", "invision<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>", "SolidWorks <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>", "Principle <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>"]
+    "tools": ["Abobe Photoshop", "Abobe Illustrator", "Abobe Indesign", "Sketch", "Invision", "SolidWorks", "Principle"]
+};
+
+
+var development = {
+        "development": ["HTML", "CSS", "Javascript"],
+        "images": ["html.svg", "css.svg", "js.svg"],
+        "body":["jimmmy jimmy jim", "jimmmy jimmy jim","jimmmy jimmy jim"]
 };
 
 
@@ -72,8 +79,8 @@ var projects = {
         "title": "CrowdScores mobile design",
         "dates": "2016",
         "description": "After taking Structural Elements from Google's Material Design stickersheet I produced the CrowdScores sticker sheet containing various elements that makeup the majority all of the CrowdScores layouts.",
-        "images": ["images/nexus.png", "images/players.png", "images/nexus.png"],
-        "url": "https://james-ciclitira.github.io/portfolio/"
+        "images": ["images/nexus.png", "images/players.png", "images/samsung.png"],
+        "url": "https://github.com/james-ciclitira/Stickersheets"
 
     }]
 };
@@ -110,6 +117,20 @@ bio.display = function() {
     $("#about").append(welcomeMessage);
 
 };
+
+
+
+
+
+development.display = function() {
+    var images = development.replace("%data%", development.images);
+    var development = development.replace("%title%", development.development);
+    var body = development.replace("%body%", development.body);
+
+    $("#development").prepend(images).prepend(development).prepend(body);
+
+};
+
 
 work.display = function() {
     if (work.jobs.length > 0) {
@@ -175,6 +196,7 @@ bio.display();
 work.display();
 education.display();
 projects.display();
+development.display();
 
 
 

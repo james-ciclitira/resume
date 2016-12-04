@@ -13,6 +13,8 @@ var HTMLabout = '<hr><h3>About</h3><p id="about">%data%</<p><hr>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li class="skills"><span>%data%</span></li>';
+var development ='<div class="media "><a class="media-left" "><img class="media-object" src=%data%"></a><div class="media-body "><h4 class="media-heading">"%title%"</h4>"%body%"</div></div>';
+
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
