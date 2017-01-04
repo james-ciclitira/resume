@@ -121,17 +121,6 @@ bio.display = function() {
 
 
 
-
-development.display = function() {
-    var images = development.replace("%data%", development.images);
-    var development = development.replace("%title%", development.development);
-    var body = development.replace("%body%", development.body);
-
-    $("#development").prepend(images).prepend(development).prepend(body);
-
-};
-
-
 work.display = function() {
     if (work.jobs.length > 0) {
 
@@ -192,12 +181,13 @@ projects.display = function() {
     }
 };
 
+$("#mapDiv").append(googleMap);
+
+
 bio.display();
 work.display();
 education.display();
 projects.display();
-development.display();
-
 
 
 

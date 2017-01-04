@@ -205,6 +205,7 @@ a {
 
 ul {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 #lets-connect {
@@ -222,17 +223,15 @@ ul {
     display: list-item;
     content: none;
     -moz-column-count: 2;
-    -moz-column-gap: 56px;
+    -moz-column-gap: 0px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 56px;
+    -webkit-column-gap: 0px;
     column-gap: 12%;
 }
 
 #map {
     display: block;
-
     height: 100%;
-    margin: 0 5%;
 }
 
 #mapDiv {
