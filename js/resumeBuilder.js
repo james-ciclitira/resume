@@ -105,8 +105,7 @@ var development = {
     }]
 };
 
-
-bio.display = function() {
+function displayBio() {
     var Name = HTMLheaderName.replace("%data%", bio.name);
     var Role = HTMLheaderRole.replace("%data%", bio.role);
 
@@ -120,7 +119,6 @@ bio.display = function() {
         $("#footer").append(Location).append(Email).append(Twitter);
 
     }
-
 
     for (var skills in bio.skills) {
         var Skills = HTMLskills.replace("%data%", bio.skills[skills]);
@@ -136,15 +134,19 @@ bio.display = function() {
     var welcomeMessage = HTMLabout.replace("%data%", bio.welcomeMessage);
     $("#about").append(welcomeMessage);
 
-};
+}
+
+displayBio();
 
 
-work.display = function() {
+
+function displayWork() {
+
     if (work.jobs.length > 0) {
 
-        for (var job in work.jobs) {
-            $("#workExperience").append(HTMLworkStart);
+        $("#workExperience").append(HTMLworkStart);
 
+        for (var job in work.jobs) {
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer).replace("#", work.jobs[job].url);
             var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
             var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
@@ -154,11 +156,12 @@ work.display = function() {
             $(".work-entry:last").append(formattedEmployer + formattedTitle, formattedDates, formattedDescription, location);
         }
     }
-};
+}
+
+displayWork();
 
 
-
-education.display = function() {
+function displayEducation() {
     for (var school in education.schools) {
 
         $("#education").append(HTMLschoolStart);
@@ -180,9 +183,12 @@ education.display = function() {
 
 
     }
-};
+}
 
-projects.display = function() {
+displayEducation();
+
+
+function displayProjects() {
     for (var item in projects.project) {
         $("#projects").append(HTMLprojectStart);
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.project[item].title).replace("#", projects.project[item].url);
@@ -196,53 +202,39 @@ projects.display = function() {
         }
 
     }
-};
+}
 
-tools.display = function() {
+displayProjects();
+
+
+function displayTools() {
     for (var item in tools.tools) {
         var formattedTools = HTMLtools.replace("%data%", tools.tools[item].title).replace("#", tools.tools[item].image);
         $("#design-tools").append(formattedTools);
     }
-};
+}
 
-tools2.display = function() {
+displayTools();
+
+function displayTools2() {
     for (var item in tools2.tools2) {
         var formattedTools2 = HTMLtools2.replace("%data%", tools2.tools2[item].title).replace("#", tools2.tools2[item].image);
         $("#design-tools2").append(formattedTools2);
     }
-};
+}
 
-development.display = function() {
+displayTools2();
+
+
+function displayDevlopment() {
     for (var item in development.development) {
         var formattedDevelopment = HTMLdevelopment.replace("%data%", development.development[item].title).replace("#", development.development[item].image);
         $("#development-tools").append(formattedDevelopment);
     }
-};
+}
+
+displayDevlopment();
 
 
 $("#mapDiv").append(googleMap);
 
-
-bio.display();
-work.display();
-education.display();
-projects.display();
-tools.display();
-tools2.display();
-development.display();
-
-
-
-/*  function inName(name) {
-    var internationalName = name;
-    console.log(name);
-
-    internationalName = internationalName[0].toUpperCase() +
-        internationalName.slice(1, internationalName.indexOf(" ") +
-            1).toLowerCase() + internationalName.slice(internationalName.indexOf(" ") + 1).toUpperCase();
-
-    return internationalName;
-};
-$("#lets-connect").append(internationalizeButton);
-
-*/
