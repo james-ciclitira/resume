@@ -46,6 +46,11 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
+var HTMLtools = '<div class="media"><a class="media-left"><img class="media-object" src=#></a><div class="media-body"><h4 class="media-heading-2">%data%</h4></div></div>';
+var HTMLtools2 = '<div class="media"><a class="media-left"><img class="media-object" src=#></a><div class="media-body"><h4 class="media-heading-2">%data%</h4></div></div>';
+var HTMLdevelopment = '<div class="media"><a class="media-left"><img class="media-object" src=#></a><div class="media-body"><h4 class="media-heading-2">%data%</h4></div></div>';
+
+
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
