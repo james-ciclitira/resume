@@ -13,11 +13,6 @@ var bio = {
     "tools": ["Abobe Photoshop", "Abobe Illustrator", "Abobe Indesign", "Sketch", "Invision", "SolidWorks", "Principle"]
 };
 
-var development = {
-    "development": ["HTML", "CSS", "Javascript"],
-    "images": ["html.svg", "css.svg", "js.svg"],
-    "body": ["jimmmy jimmy jim", "jimmmy jimmy jim", "jimmmy jimmy jim"]
-};
 
 var education = {
     "schools": [{
@@ -138,8 +133,6 @@ function displayBio() {
 
 displayBio();
 
-
-
 function displayWork() {
 
     if (work.jobs.length > 0) {
@@ -161,31 +154,42 @@ function displayWork() {
 displayWork();
 
 
-function displayEducation() {
-    for (var school in education.schools) {
+education.display = function() {
+    education.schools.forEach(function(school) {
+        $("#education").append(HTMLschoolStart);
+
+        var formattedSchoolName = HTMLschoolName.replace("%data%", school.name).replace("#", school.url);
+        var formattedDegree = HTMLschoolDegree.replace("%data%", school.degree);
+        var formattedNameDegree = formattedSchoolName + formattedDegree;
+        var formattedSchoolDate = HTMLschoolDates.replace("%data%", school.dates);
+        var formattedMajor = HTMLschoolMajor.replace("%data%", school.majors);
+        var formattedLocation = HTMLschoolLocation.replace("%data%", school.location);
+
+        $(".education-entry:last").append(formattedNameDegree);
+        $(".education-entry:last").append(formattedMajor);
+        $(".education-entry:last").append(formattedLocation);
+        $(".education-entry:last").append(formattedSchoolDate);
+    });
+
+    $("#education").append(HTMLonlineClasses);
+
+    education.onlinecourses.forEach(function(onlinecourses) {
+        var formattedTitle = HTMLonlineTitle.replace("%data%", onlinecourses.title).replace("#", onlinecourses.url)
+        var formattedSchool = HTMLonlineSchool.replace("%data%", onlinecourses.school);
+        var formattedTitleSchool = formattedTitle + formattedSchool;
+        var formattedDate = HTMLonlineDates.replace("%data%", onlinecourses.dates);
 
         $("#education").append(HTMLschoolStart);
-        var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name).replace("#", education.schools[school].url);
-        var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-        var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-        var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-        var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+        $(".education-entry:last").append(formattedTitleSchool);
+        $(".education-entry:last").append(formattedDate);
 
-        $("#education").append(formattedName + formattedDegree, formattedMajor, formattedDates, formattedLocation);
+    });
+};
 
-    }
-    for (var onlinecourses in education.onlinecourses) {
-        $("#education").append(HTMLonlineClasses);
-        var OnlineTitle = HTMLonlineTitle.replace('%data%', education.onlinecourses[onlinecourses].title).replace("#", education.onlinecourses[onlinecourses].url);
-        var School = HTMLonlineSchool.replace("%data%", education.onlinecourses[onlinecourses].school);
-        var dates = HTMLonlineDates.replace("%data%", education.onlinecourses[onlinecourses].dates);
-        $("#education").append(OnlineTitle + School, dates);
+education.display();
 
 
-    }
-}
 
-displayEducation();
 
 
 function displayProjects() {
@@ -206,7 +210,6 @@ function displayProjects() {
 
 displayProjects();
 
-
 function displayTools() {
     for (var item in tools.tools) {
         var formattedTools = HTMLtools.replace("%data%", tools.tools[item].title).replace("#", tools.tools[item].image);
@@ -225,7 +228,6 @@ function displayTools2() {
 
 displayTools2();
 
-
 function displayDevlopment() {
     for (var item in development.development) {
         var formattedDevelopment = HTMLdevelopment.replace("%data%", development.development[item].title).replace("#", development.development[item].image);
@@ -235,6 +237,4 @@ function displayDevlopment() {
 
 displayDevlopment();
 
-
 $("#mapDiv").append(googleMap);
-
