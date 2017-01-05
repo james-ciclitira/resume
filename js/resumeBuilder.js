@@ -72,14 +72,14 @@ var tools = {
         "image": ["images/sketch.svg"]
     }, {
         "title": "Photoshop",
-        "image": ["images/photoshop.svg"]
+        "image": ["images/Photoshop.svg"]
     }]
 };
 
 var tools2 = {
     "tools2": [{
         "title": "Illustrator",
-        "image": ["images/illustrator.svg"]
+        "image": ["images/Illustrator.svg"]
     }, {
         "title": "Invision",
         "image": ["images/invision.svg"]
@@ -90,7 +90,7 @@ var tools2 = {
 var development = {
     "development": [{
         "title": "HTML",
-        "image": ["images/HTML.svg"]
+        "image": ["images/html.svg"]
     }, {
         "title": "CSS",
         "image": ["images/css.svg"]
@@ -188,10 +188,6 @@ education.display = function() {
 
 education.display();
 
-
-
-
-
 function displayProjects() {
     for (var item in projects.project) {
         $("#projects").append(HTMLprojectStart);
@@ -208,6 +204,32 @@ function displayProjects() {
     }
 }
 
+
+
+/*
+
+     $("#education").append(HTMLschoolStart);
+
+        var formattedSchoolName = HTMLschoolName.replace("%data%", school.name).replace("#", school.url);
+        var formattedDegree = HTMLschoolDegree.replace("%data%", school.degree);
+        var formattedNameDegree = formattedSchoolName + formattedDegree;
+        var formattedSchoolDate = HTMLschoolDates.replace("%data%", school.dates);
+        var formattedMajor = HTMLschoolMajor.replace("%data%", school.majors);
+        var formattedLocation = HTMLschoolLocation.replace("%data%", school.location);
+
+        $(".education-entry:last").append(formattedNameDegree);
+        $(".education-entry:last").append(formattedMajor);
+        $(".education-entry:last").append(formattedLocation);
+        $(".education-entry:last").append(formattedSchoolDate);
+
+
+
+
+
+
+
+
+*/
 displayProjects();
 
 function displayTools() {
