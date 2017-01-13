@@ -6,13 +6,13 @@ var bio = {
         "email": "Email: jciclitira@gmail.com",
         "twitter": "Mobile:     07847395121",
         "location": "Location:     London",
-        "mobile": "07847395121"
+        "mobile": "07847395121",
+        "github" : "james-ciclitira"
     }],
-    "bioPic": "images/bio.png",
+    "biopic": "images/bio.png",
     "skills": ["Sketching", "UI/UX Design", "Interaction Design", "Prototyping", "Wireframes", "Grid & Layout", "Color Theory", "Typography", "Design Research", "Visual Design"],
     "tools": ["Abobe Photoshop", "Abobe Illustrator", "Abobe Indesign", "Sketch", "Invision", "SolidWorks", "Principle"]
 };
-
 
 var education = {
     "schools": [{
@@ -49,7 +49,7 @@ var work = {
     }]
 };
 
-var projects = {
+var project = {
     "project": [{
         "title": "Udacity portfolio project",
         "dates": "2016",
@@ -110,8 +110,8 @@ bio.display = function() {
         var Location = HTMLlocation.replace("%data%", contacts.location);
         var Email = HTMLemail.replace("%data%", contacts.email);
         var Twitter = HTMLtwitter.replace("%data%", contacts.twitter);
-        $("#topContacts").append(Location).append(Email).append(Twitter);
-        $("#footer").append(Location).append(Email).append(Twitter);
+        var Github = HTMLgithub.replace("%data%" , contacts.github);
+        $("#topContacts, #footer").append(Location).append(Email).append(Github);
 
     });
 
@@ -147,7 +147,6 @@ work.display = function() {
 
 work.display();
 
-
 education.display = function() {
     education.schools.forEach(function(school) {
         $("#education").append(HTMLschoolStart);
@@ -182,29 +181,31 @@ education.display = function() {
 
 education.display();
 
-
 projects.display = function() {
-    projects.project.forEach(function(projects) {
+   project.project.forEach(function(item) {
 
-        $("#projects").append(HTMLprojectStart);
+       $("#projects").append(HTMLprojectStart);
 
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.title).replace("#", projects.url);
-        var formattedDates = HTMLprojectDates.replace("%data%", projects.dates);
-        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.description);
+       var formattedTitle = HTMLprojectTitle.replace("%data%", item.title).replace("#", item.url);
+       var formattedDates = HTMLprojectDates.replace("%data%", item.dates);
+       var formattedDescription = HTMLprojectDescription.replace("%data%", item.description);
 
-        $(".project-entry:last").append(formattedTitle, formattedDates, formattedDescription);
+       $(".project-entry:last").append(formattedTitle, formattedDates, formattedDescription);
 
-        for (var images in projects.images) {
-            var images = HTMLprojectImage.replace("%data%", projects.images[images]);
-            $(".project-entry:last").append(images);
-        }
+       item.images.forEach(function(img) {
+           $(".project-entry:last").append(HTMLprojectImage.replace("%data%", img));
+       });
+
+       // for (var images in projects.images) {
+       //     var images = HTMLprojectImage.replace("%data%", projects.images[images]);
+       //     $(".project-entry:last").append(images);
+       // }
 
 
-    });
+   });
 };
 
 projects.display();
-
 
 development.display = function() {
 
@@ -237,7 +238,5 @@ tools2.display = function() {
 };
 
 tools2.display();
-
-
 
 $("#mapDiv").append(googleMap);
