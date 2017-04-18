@@ -1,12 +1,9 @@
 var bio = {
     "name": "James Ciclitra",
-    "role": "Digital Product designer",
-    "welcomeMessage": "I am a London based UI designer. I have spend the last year and a half as the design lead for a mobile startup working on both iOS and android platform. In this time I have had the chance to tackle a array of challenges, in a number fields such as UI, UX, motion and visual design as well as working within the marketing department in order to produce promotional product and material. My passion is developing clean, effective and useable interfaces. I am happy and able to work on either a Web, iOS or Android platform but my preference is the former. I am a strong believer of material design principles and lover all things Google. <br><br>Within my current position at CrowdScores, we produce a social football scores network for both Android and iOS platforms. We have a strong mobile development team with two developers per platform. I am not a huge football fan but that has not mattered as my passion is to create a great product irrespective of the field or market. I have been working as the principal designer with feedback and input from the rest of the company. Being the sole design lead has been a challenge at times, but it has been a great learning experience. I have had the opportunity to work closely with an amazing development team and marketing department.<br><br>When I joined CrowdScores we had 47,000 monthly users. We are now approaching half a million, and still growing! It has been a brilliant project to work on. For my career development I have decided that I need to move to a larger team, while still working as an in-house designer for one brand. Although I have learnt a lot about football in the time that I have spent in my current position, I am still not the biggest football fan and am looking for something new. I am naturally inquisitive and always interested in learning new things. At the moment, I am working on a front-end web development Nanodegree offered by Udacity. I am halfway though the course and am keen to follow this with the Android basic Nanodegree.",
+    "welcomeMessage": "Product Designer based in London, creating complex digital products that lead to better user experiences. I love to design beautifully simple interfaces, code, iterate and create. I am an experienced and capable Digital Product Designer with over 2 years of professional experience. ",
     "contacts": [{
-        "email": "Email: jciclitira@gmail.com",
-        "location": "Location: London",
-        "mobile": "Mobile: 07847395121",
-        "github": "GitHub: james-ciclitira"
+        "email": "jciclitira@gmail.com",
+        "website": "jciclitira.com"
     }],
     "skills": ["Sketching", "UI/UX Design", "Interaction Design", "Prototyping", "Wireframes", "Grid & Layout", "Color Theory", "Typography", "Design Research", "Visual Design"],
 };
@@ -27,7 +24,7 @@ var work = {
             "title": "Product & Web development",
             "location": "London - United Kingdom",
             "dates": "January 2017 - April 2017",
-            "description": "Suggestv is the inventor of semantic video distribution. During my time here I have worked on developing a online platform for buying and selling video content. ",
+            "description": "Suggestv is the inventor of semantic video distribution. I was responsible for designing and aiding in the production of a semantic video distribution platform using React. ",
             "url": "http://sugges.tv/"
         },
 
@@ -35,7 +32,7 @@ var work = {
             "employer": "CrowdScores",
             "title": "Product designer",
             "dates": "September 2015 - January 2017",
-            "description": "CrowdScores is a real-time sports data application. I had the pleasure of being the design lead and taking responsibility for a variety of roles including, designing the mobile application, conducting research, conceptualising ideas, building mockup prototypes, and finally creating promotional material for the marketing department. On a whole I have enjoyed the time I have spend here, as it has been a valuable learning experience but I feel it is time for a change.",
+            "description": "CrowdScores is a real-time sports data application. I had the pleasure of working as the principal designer taking responsibility for a variety of roles. Responsible included improving the existing product,  developing new features  research, conceptualising ideas & prototyping.",
             "url": "http://CrowdScores.com/"
         }, {
             "employer": "Prediction labs",
@@ -54,7 +51,7 @@ var work = {
         {
             "employer": "SamLab",
             "title": "Designer Intern",
-            "dates": "August 2015 - August 2015",
+            "dates": "",
             "description": "",
             "url": "http://SamLab.com/"
         }
@@ -119,16 +116,13 @@ var development = {
 
 bio.display = function() {
     var Name = HTMLheaderName.replace("%data%", bio.name);
-    var Role = HTMLheaderRole.replace("%data%", bio.role);
 
-    $("#header").prepend(Role).prepend(Name);
+    $("#header").prepend(Name);
 
     bio.contacts.forEach(function(contacts) {
-        var Location = HTMLlocation.replace("%data%", contacts.location);
         var Email = HTMLemail.replace("%data%", contacts.email);
-        var Github = HTMLgithub.replace("%data%", contacts.github);
-        var Mobile = HTMLmobile.replace("%data%", contacts.mobile);
-        $("#topContacts, #footer").append(Location).append(Email).append(Github).append(Mobile);
+        var Website = HTMLweb.replace("%data%", contacts.website);
+        $("#Contact").append(Email).append(Website);
 
     });
 
@@ -154,7 +148,7 @@ work.display = function() {
             var formattedDescription = HTMLworkDescription.replace("%data%", jobs.description);
             var formattedDates = HTMLworkDates.replace("%data%", jobs.dates);
 
-            $(".work-entry:last").append(formattedEmployer + formattedTitle, formattedDescription, formattedDates);
+            $(".work-entry:last").append(formattedTitle,  formattedEmployer + formattedDates, formattedDescription );
         });
     }
 };

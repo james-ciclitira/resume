@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>James Ciclitira - Resume</title>
+  <title>Jciclitira</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
@@ -12,9 +14,14 @@
 </head>
 <style>
 body,
-a  {
+a {
   font-family: Raleway, sans-serif;
   color: #4c4c4c;
+}
+
+h4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 700;
 }
 
 hr {
@@ -27,27 +34,38 @@ ul {
   -moz-columns: 2;
   padding: 0px;
 }
+
+.accent {
+  color: #EC407A
+}
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 </style>
 
 <body class="bg-black-10">
-  <div class="mw8 db center ph3 pv1 bg-white shadow-1">
+  <div class="mw8 db center ph5 mv3 pv4 bg-white shadow">
     <div class="w-100 dib">
-      <div id="header" class="w-50 relastive fl dt"></div>
-      <div id="topContacts" class="tr w-50 relative fl dt"></div>
-      <div id="about" class="relative fl dt w-100 border-box"></div>
-      <div class="w-50 relative fl dt">
-        <h2>Professional skills</h2>
-        <h3>Design Skills</h3>
+      <div id="header"></div>
+      <div id="about" class="w-100 border-box"></div>
+
+
+
+
+      <div class="w-40 fr ">
+        <h4>DESIGN SKILLS</h4>
         <ul id="skills"></ul>
-        <h3>Design tools</h3>
+        <h4>DESIGN TOOL</h4>
         <div id="design-tools"></div>
-        <h2>Development skills</h2>
+        <h4>DEVELOPMENT SKILLS</h4>
         <div id="development-tools"></div>
-      </div>
-      <div class="w-50 fr">
-        <h2>Experience</h2>
+       <!--  <h4>CONTACT</h4>
+        <div id="Contact" class="tr w-50 relative fl dt"></div>
+ -->      </div>
+      <div class="w-50 fl">
+        <h4>EXPERIENCE</h4>
         <div id="workExperience"></div>
-        <h2>Education</h2>
+        <h4>EDUCATION</h4>
         <div id="education"></div>
       </div>
       <div class="fl dt border-box w-100" id="projects">
