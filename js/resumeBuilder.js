@@ -51,17 +51,20 @@ var work = {
 
 var project = {
     "project": [{
-        "title": "Suggestv - web site",
-        "dates": "2016",
-        "description": "Front facing web site for suggestv",
+        "title": "Suggestv - Lead Generation Landing Pages",
+        "dates": "",
+        "description": "The aim of the Suggestv landing page is used to capture user data, such as a name and email address. The sole purpose of the site is to connect the in-house sales team with prospect clients. The site is build using a light weight tachyons framework",
         "images": ["images/suggestv-1.png", "images/suggestv-2.png", "images/suggestv-3.png"],
-        "url": "https://sugges.tv"
+        "url": "https://abundant-scissors.surge.sh/",
+        "demo": "https://abundant-scissors.surge.sh/"
+
     }, {
-        "title": "CrowdScores mobile design",
-        "dates": "2016",
-        "description": "After taking Structural Elements from Google's Material Design stickersheet I produced the CrowdScores sticker sheet containing various elements that makeup the majority all of the CrowdScores layouts.",
+        "title": "CrowdScores - components",
+        "dates": "",
+        "description": "Using structural elements from Google's Material Design Stickersheet & iOS 10 UI kit, the CrowdScores components sheet was creted containing various elements that makeup the majority layouts layouts within the app.",
         "images": ["images/nexus.png", "images/players.png", "images/samsung.png"],
-        "url": "https://github.com/james-ciclitira/Stickersheets"
+        "url": "https://github.com/james-ciclitira/Stickersheets",
+        "demo": "https://twitter.com/jimmy__design/status/802513442816933888"
 
     }]
 };
@@ -157,7 +160,7 @@ education.display = function() {
         var formattedMajor = HTMLschoolMajor.replace("%data%", school.majors);
 
         $(".education-entry:last").append(formattedNameDegree);
-            $(".education-entry:last").append(formattedDegree);
+        $(".education-entry:last").append(formattedDegree);
         $(".education-entry:last").append(formattedMajor);
     });
 
@@ -173,8 +176,10 @@ projects.display = function() {
         var formattedTitle = HTMLprojectTitle.replace("%data%", item.title).replace("#", item.url);
         var formattedDates = HTMLprojectDates.replace("%data%", item.dates);
         var formattedDescription = HTMLprojectDescription.replace("%data%", item.description);
+        var formattedDemo = HTMLprojectDemo.replace("#", item.demo);
 
-        $(".project-entry:last").append(formattedTitle, formattedDates, formattedDescription);
+
+        $(".project-entry:last").append(formattedTitle, formattedDates, formattedDescription, formattedDemo);
 
         item.images.forEach(function(img) {
             $(".project-entry:last").append(HTMLprojectImage.replace("%data%", img));
