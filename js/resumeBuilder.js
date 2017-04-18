@@ -157,7 +157,7 @@ education.display = function() {
         var formattedMajor = HTMLschoolMajor.replace("%data%", school.majors);
 
         $(".education-entry:last").append(formattedNameDegree);
-        $(".education-entry:last").append(formattedDegree);
+            $(".education-entry:last").append(formattedDegree);
         $(".education-entry:last").append(formattedMajor);
     });
 
