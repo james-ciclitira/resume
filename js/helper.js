@@ -11,8 +11,8 @@ var HTMLdevelopment = '<a class="w-50 mt3 dib"><img style="height: 40px;" src=#>
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkTitle = '<h3 class="black-80 fw6">%data%</h3>';
-var HTMLworkEmployer = '<a class="no-underline accent db f5 fw5 pt2" href="#">%data%';
-var HTMLworkDates = ' &#8226; %data% </a>';
+var HTMLworkEmployer = '<a class="no-underline red db f5 fw5 pt2" href="#">%data%';
+var HTMLworkDates = '<span class="black-50"> &#8226; %data%</span> </a>';
 var HTMLworkDescription = '<p class="ma0 pt2">%data%</p>';
 
 
