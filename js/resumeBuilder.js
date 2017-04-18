@@ -37,23 +37,14 @@ var work = {
         }, {
             "employer": "Prediction labs",
             "title": "Freelance designer",
-            "dates": "",
+            "dates": "January 2017 - Present",
             "description": "Numilli app - Bitcoin safe and easy. Numilli  aims to makes it easy to securely buy and sell bitcoin currency, on the go using a mobile app & ATM machine.",
         },
         {
             "employer": "Foreminds",
             "title": "Freelance designer",
-            "dates": "",
+            "dates": "March 2017 - Present",
             "description": "BaseSight - workforce management platform, which aims to help improve efficiency & productivity",
-        },
-
-
-        {
-            "employer": "SamLab",
-            "title": "Designer Intern",
-            "dates": "",
-            "description": "",
-            "url": "http://SamLab.com/"
         }
     ]
 };
@@ -160,14 +151,14 @@ education.display = function() {
         $("#education").append(HTMLschoolStart);
 
         var formattedSchoolName = HTMLschoolName.replace("%data%", school.name).replace("#", school.url);
-        var formattedDegree = HTMLschoolDegree.replace("%data%", school.degree);
-        var formattedNameDegree = formattedSchoolName + formattedDegree;
         var formattedSchoolDate = HTMLschoolDates.replace("%data%", school.dates);
+        var formattedNameDegree = formattedSchoolName + formattedSchoolDate;
+        var formattedDegree = HTMLschoolDegree.replace("%data%", school.degree);
         var formattedMajor = HTMLschoolMajor.replace("%data%", school.majors);
 
         $(".education-entry:last").append(formattedNameDegree);
+        $(".education-entry:last").append(formattedDegree);
         $(".education-entry:last").append(formattedMajor);
-        $(".education-entry:last").append(formattedSchoolDate);
     });
 
 };
