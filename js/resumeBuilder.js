@@ -1,6 +1,6 @@
 var bio = {
     "name": "James Ciclitra",
-    "welcomeMessage": "Product Designer based in London, creating complex digital products that lead to better user experiences. I love to design beautifully simple interfaces, code, iterate and create. I am an experienced and capable Digital Product Designer with over 2 years of professional experience. ",
+    "welcomeMessage": "Product Designer based in London, creating complex digital products that lead to better user experiences. I love to design beautifully simple interfaces, code, iterate and create. I am an experienced and capable Digital Product Designer with over two years’ professional experience. ",
     "contacts": [{
         "email": "jciclitira@gmail.com",
         "website": "jciclitira.com"
@@ -12,7 +12,7 @@ var education = {
     "schools": [{
         "name": "Edinburgh College Of Art",
         "degree": "Product Design",
-        "majors": "2:1 ba (Hons)",
+        "majors": "2:1 BA(Hons)",
         "dates": "2011 - 2015",
         "url": "http://www.eca.ed.ac.uk/school-of-design/undergraduate/product-design-ba-hons"
     }, ]
@@ -21,30 +21,30 @@ var education = {
 var work = {
     "jobs": [{
             "employer": "Suggestv",
-            "title": "Product & Web development",
+            "title": "Product & Web Development",
             "location": "London - United Kingdom",
             "dates": "January 2017 - April 2017",
-            "description": "Suggestv is the inventor of semantic video distribution. I was responsible for designing and aiding in the production of a semantic video distribution platform using React. ",
+            "description": "Suggestv is the inventor of semantic video distribution. I was responsible for designing and facilitating the production of a semantic video distribution platform using React. ",
             "url": "http://sugges.tv/"
         },
 
         {
             "employer": "CrowdScores",
-            "title": "Product designer",
+            "title": "Product Designer",
             "dates": "September 2015 - January 2017",
-            "description": "CrowdScores is a real-time sports data application. I had the pleasure of working as the principal designer taking responsibility for a variety of roles. Responsible included improving the existing product,  developing new features  research, conceptualising ideas & prototyping.",
+            "description": "CrowdScores is a real-time sports data application. I had the pleasure of working as the principal designer, taking responsibility for a variety of roles. Responsibilities included improving the existing product, researching and developing new features, conceptualising ideas and prototyping.",
             "url": "http://CrowdScores.com/"
         }, {
             "employer": "Prediction labs",
-            "title": "Freelance designer",
+            "title": "Freelance Designer",
             "dates": "January 2017 - Present",
-            "description": "Numilli app - Bitcoin safe and easy. Numilli  aims to makes it easy to securely buy and sell bitcoin currency, on the go using a mobile app & ATM machine.",
+            "description": "Numilli app - Bitcoin safe and easy. Numilli aims to makes it easy to securely buy and sell bitcoin currency on the go using a mobile app and ATM machine. My ongoing responsibility is the design and branding for the mobile app, web platform and ATM machines ",
         },
         {
             "employer": "Foreminds",
-            "title": "Freelance designer",
+            "title": "Freelance Designer",
             "dates": "March 2017 - Present",
-            "description": "BaseSight - workforce management platform, which aims to help improve efficiency & productivity",
+            "description": "BaseSight - workforce management platform, which aims to help improve efficiency and productivity. Responsibilities included aiding in the development of the initial concept by generating wireframes and initial interface designs ",
         }
     ]
 };
