@@ -84,7 +84,7 @@ var tools = {
         "image": ["images/invision.svg"]
     }, {
         "title": "Pixate",
-        "image": ["images/pixate.jpg"]
+        "image": ["images/pixate.png"]
     }, {
         "title": "Craft",
         "image": ["images/craft.svg"]
