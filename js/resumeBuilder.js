@@ -20,6 +20,12 @@ var education = {
 
 var work = {
     "jobs": [{
+            "employer": "CrowdScores",
+            "title": "Product Designer",
+            "dates": "September 2015 - January 2017",
+            "description": "CrowdScores is a real-time sports data application. I had the pleasure of working as the principal designer, taking responsibility for a variety of roles. Responsibilities included improving the existing product, researching and developing new features, conceptualising ideas and prototyping.",
+            "url": "http://CrowdScores.com/"
+        }, {
             "employer": "Suggestv",
             "title": "Product & Web Development",
             "location": "London - United Kingdom",
@@ -28,19 +34,13 @@ var work = {
             "url": "http://sugges.tv/"
         },
 
+
         {
-            "employer": "CrowdScores",
-            "title": "Product Designer",
-            "dates": "September 2015 - January 2017",
-            "description": "CrowdScores is a real-time sports data application. I had the pleasure of working as the principal designer, taking responsibility for a variety of roles. Responsibilities included improving the existing product, researching and developing new features, conceptualising ideas and prototyping.",
-            "url": "http://CrowdScores.com/"
-        }, {
             "employer": "Prediction labs",
             "title": "Freelance Designer",
             "dates": "January 2017 - Present",
             "description": "Numilli app - Bitcoin safe and easy. Numilli aims to makes it easy to securely buy and sell bitcoin currency on the go using a mobile app and ATM machine. My ongoing responsibility is the design and branding for the mobile app, web platform and ATM machines ",
-        },
-        {
+        }, {
             "employer": "Foreminds",
             "title": "Freelance Designer",
             "dates": "March 2017 - Present",
@@ -142,7 +142,7 @@ work.display = function() {
             var formattedDescription = HTMLworkDescription.replace("%data%", jobs.description);
             var formattedDates = HTMLworkDates.replace("%data%", jobs.dates);
 
-            $(".work-entry:last").append(formattedTitle,  formattedEmployer + formattedDates, formattedDescription );
+            $(".work-entry:last").append(formattedTitle, formattedEmployer + formattedDates, formattedDescription);
         });
     }
 };
