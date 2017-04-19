@@ -54,7 +54,7 @@ var project = {
         "title": "Suggestv - Lead Generation Landing Pages",
         "dates": "",
         "description": "The aim of the Suggestv landing page is used to capture user data, such as a name and email address. The sole purpose of the site is to connect the in-house sales team with prospect clients. The site is build using a light weight tachyons framework",
-        "images": ["images/suggestv-1.png", "images/suggestv-2.png", "images/suggestv-3.png"],
+        "images": ["images/suggestv-1.jpg", "images/suggestv-2.jpg", "images/suggestv-3.jpg"],
         "url": "https://abundant-scissors.surge.sh/",
         "demo": "https://abundant-scissors.surge.sh/"
 
@@ -62,7 +62,7 @@ var project = {
         "title": "CrowdScores - components",
         "dates": "",
         "description": "Using structural elements from Google's Material Design Stickersheet & iOS 10 UI kit, the CrowdScores components sheet was creted containing various elements that makeup the majority layouts layouts within the app.",
-        "images": ["images/nexus.png", "images/players.png", "images/samsung.png"],
+        "images": ["images/nexus.jpg", "images/players.jpg", "images/samsung.jpg"],
         "url": "https://github.com/james-ciclitira/Stickersheets",
         "demo": "https://twitter.com/jimmy__design/status/802513442816933888"
 
@@ -84,7 +84,7 @@ var tools = {
         "image": ["images/invision.svg"]
     }, {
         "title": "Pixate",
-        "image": ["images/pixate.png"]
+        "image": ["images/pixate.jpg"]
     }, {
         "title": "Craft",
         "image": ["images/craft.svg"]
