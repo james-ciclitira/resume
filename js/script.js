@@ -1,4 +1,4 @@
-var HTMLheaderName = '<h2>%data%</h2>';
+var HTMLheaderName = '<h1>%data%</h1>';
 var HTMLabout = '<p class="f4-ns f5 fw3">%data%</<p>';
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkTitle = '<h3 class="black-80 mb1 mt4 fw6">%data%</h3>';
@@ -12,7 +12,7 @@ var HTMLschoolDegree = '<p class="dib">%data%</p>';
 var HTMLschoolMajor = '<p class="dib ml1"> - %data%</p>';
 var HTMLskills = '<li class="list black-50 pv2">%data%</li>';
 var HTMLtools = '<a class="w-50 mt3 dib"><img style="height: 40px;" src=#><h3 class="dib mt2 ml3 black-50 v-top">%data%</h3></a>';
-var HTMLdevelopment = '<a class="w-50 mt3 dib"><img style="height: 40px;" src=#><h3 class="dib black-50r mt2 ml3 v-top">%data%</h3></a>';
+var HTMLdevelopment = '<a class="w-50 mt3 dib"><img style="height: 40px;" src=#><h3 class="dib black-50 mt2 ml3 v-top">%data%</h3></a>';
 var HTMLemail = '<a class="tl db mt2 fw5" href="mailto:jciclitira@gmail.com">%data%</a>';
 var HTMLweb = '<a class="tl db mt3 fw5" href="jciclitra.com">%data%</a>';
 var HTMLprojectStart = '<div class="project-entry"></div>';
