@@ -2,102 +2,111 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>James Ciclitira - Product Designer</title>
-  <meta name="Description" content="James is a Digital Product Designer. Creatively resolving problems & building amazing user experiences, specialising in Mobile & Web design">
-  <meta name="keywords" content=" 'Product Design, James Ciclitira, UI/UX, User Interface Design, User Experiences Design, London, Europe, HTML, CSS, React, iOS, Andriod, Mobile, Web, Sketch, Prototyping, Web development, Responsive Design, User Testing, Mobile Apps, Interaction Design, Front-end Development, Digital Product Design, Jimmy, Jimi, Tech">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
-  <meta name="viewport" content="width=device-width">
-  <script src="js/script.js"></script>
+    <meta charset="utf-8">
+    <title>James Ciclitira - Product Designer</title>
+    <meta name="Description" content="James is a Digital Product Designer. Creatively resolving problems & building amazing user experiences, specialising in Mobile & Web design">
+    <meta name="keywords" content=" 'Product Design, James Ciclitira, UI/UX, User Interface Design, User Experiences Design, London, Europe, HTML, CSS, React, iOS, Andriod, Mobile, Web, Sketch, Prototyping, Web development, Responsive Design, User Testing, Mobile Apps, Interaction Design, Front-end Development, Digital Product Design, Jimmy, Jimi, Tech">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
+    <meta name="viewport" content="width=device-width">
+    <script src="js/script.js"></script>
 </head>
 <style>
-
-
 @font-face {
     font-family: EuclidFlex;
     src: url(EuclidFlex-Regular.otf) format('opentype');
 }
 
 html {
-  font-family: EuclidFlex;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+    font-family: EuclidFlex;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
 
 body,
 a {
-  color: rgba(0, 0, 0, 0.82);
-  text-decoration: none;
-  font-weight: 500 !important;
-  font-family: EuclidFlex;
+    color: rgba(0, 0, 0, 0.82);
+    text-decoration: none;
+    font-weight: 500 !important;
+    font-family: EuclidFlex;
 }
 
-h5, h4,h3,h2,h1 {
-  color: rgba(0, 0, 0, 0.82);
-  line-height: 1.5;
-  font-weight: 500 !important;
-  font-family: EuclidFlex;
+h5,
+h4,
+h3,
+h2,
+h1 {
+    color: rgba(0, 0, 0, 0.82);
+    line-height: 1.5;
+    font-weight: 500 !important;
+    font-family: EuclidFlex;
 }
 
 p {
-  line-height: 1.3;
+    line-height: 1.3;
 }
 
 hr {
-  opacity: .22
+    opacity: .22
 }
 
 ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  padding: 0px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding: 0px;
 }
 
 .lh24 {
-  line-height: 24px
+    line-height: 24px
 }
 
 .red {
-  color: #EC407A
+    color: #EC407A
 }
 
+
 .shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 479px) {
+    .m-neg {
+        margin-top: -36px;
+    }
 }
 </style>
 
 <body class="bg-black-10">
-  <div class="mw8 db center ph5-ns ph2 mv3-ns mv2 pv4-ns pv2 bg-white br2 shadow">
-    <div class="w-100 dib">
-      <div class="dib f3" id="header"></div>
-       <div class="fr-ns mt4-ns pt2">
-        <a href="https://jciclitira-resume.netlify.com/images/Resume_James_Ciclitira.pdf" download="Resume_James_Ciclitira.pdf" class="b">Download PDF</a>
-      </div>
-      <a target="blank" href="https://www.jciclitira.com" class="db fr mt4 pt2 mr5 ">Open Portfolio</a>
-      <div id="about" class="w-100 mb4 mt3"></div>
-      <div class="w-50-ns w-100 fl">
-        <h4>EXPERIENCE</h4>
-        <div id="workExperience"></div>
-        <h4 class="mt5">EDUCATION</h4>
-        <div class="pb3 " id="education"></div>
-      </div>
-      <div class="w-40-ns w-100 fr ">
-        <h4>DESIGN SKILLS</h4>
-        <ul class="mt4" id="skills"></ul>
-        <h4 class="mt5">DESIGN TOOLS</h4>
-        <div class="mt4" id="design-tools"></div>
-        <h4 class="mt5">DEVELOPMENT SKILLS</h4>
-        <div class="mt4" id="development-tools"></div>
-      </div>
-      <div class="fl mt3 w-100 dn" id="projects">
-        <h3>Recent projects</h3>
-      </div>
-      <script src="js/resumeBuilder.js"></script>
-      <script src="js/extras.js"></script>
+    <div class="mw8 db center ph5-ns ph2 mv3-ns mv2 pv4-ns pv2 bg-white br2 shadow">
+        <div class="w-100 dib">
+            <div class="dib f3" id="header"></div>
+            <div class="fr-ns mt4-ns pt2 mt0 m-neg">
+                <a href="https://jciclitira-resume.netlify.com/images/Resume_James_Ciclitira.pdf" download="Resume_James_Ciclitira.pdf" class="b">Download PDF</a>
+                <a target="blank" href="https://www.jciclitira.com" class="ml3 ">Open Portfolio</a>
+            </div>
+            <div id="about" class="w-100 mb4 mt3"></div>
+            <div class="w-50-ns w-100 fl">
+                <h4>EXPERIENCE</h4>
+                <div id="workExperience"></div>
+                <h4 class="mt5">EDUCATION</h4>
+                <div class="pb3 " id="education"></div>
+            </div>
+            <div class="w-40-ns w-100 fr ">
+                <h4>DESIGN SKILLS</h4>
+                <ul class="mt4" id="skills"></ul>
+                <h4 class="mt5">DESIGN TOOLS</h4>
+                <div class="mt4" id="design-tools"></div>
+                <h4 class="mt5">DEVELOPMENT SKILLS</h4>
+                <div class="mt4" id="development-tools"></div>
+            </div>
+            <div class="fl mt3 w-100 dn" id="projects">
+                <h3>Recent projects</h3>
+            </div>
+            <script src="js/resumeBuilder.js"></script>
+            <script src="js/extras.js"></script>
 </body>
 
 </html>
